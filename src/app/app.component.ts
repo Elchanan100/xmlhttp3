@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LocationService } from './services/location.service';
+import { ExtraSerService } from './services/extra-ser.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'xmlhttp3';
+  constructor(public  UsersService:ExtraSerService,public location:LocationService){}
 }
